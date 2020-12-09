@@ -115,22 +115,22 @@
 
                     <!-- 表身 -->
                     <tbody id="listTable">
-                    <tr th:each="i:${session.table.getTable()}">
+                    <tr th:each="i:${session.contacts}">
                         <td><input type="checkbox" name="item"></td>
-                        <td th:text="${iStat.index + 1}">1</td>
+                        <td th:text="${i.getId()}">1</td>
                         <td class="Name" th:text="${i.getName()}"></td>
                         <td class="telNum" th:text="${i.getTelephone()}"></td>
                         <td class="eMail" th:text="${i.getEmail()}"></td>
                         <td class="Address" th:text="${i.getAddress()}"></td>
                         <td class="qqNum" th:text="${i.getQq()}"></td>
                         <td class="nickName" th:text="${i.getNickName()}"></td>
-                        <td class="last">
-                            <button onclick="del(this)">
-                                删除
-                            </button>
-                            <button onclick="chg(this)">
-                                修改
-                            </button>
+                        <td>
+
+                            <a type="button" class="btn btn-xs btn-success" href="./todoedit.html?todoId=1"
+                               th:href="@{/del(Id=${i.getId()})}">删除<a>
+                            <a type="button" class="btn btn-xs btn-success" href="./todoedit.html?todoId=1"
+                            th:href="@{/edit(Id=${i.getId()})}">修改<a>
+                        </td>
                     </tr>
                     </tbody>
                     <!-- 表身 -->

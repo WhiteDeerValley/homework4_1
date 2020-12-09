@@ -88,10 +88,10 @@ form {
     -o-border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     margin:0.7em 0;
-    background: url("../images/icons.png") no-repeat 14px 16px #474a55;
+    background: url("../img/icons.png") no-repeat 14px 16px #474a55;
 }
 .app-AddressBook input[type="password"]{
-    background: url("../images/icons.png") no-repeat 13px -61px #474a55;
+    background: url("../img/icons.png") no-repeat 13px -61px #474a55;
 }
 .submit {
     margin: 1em 0;
@@ -267,11 +267,11 @@ input[type="submit"]:hover{
         width:68%;
         padding: 1em 1em 1em 4em;
         font-size: 15px;
-        background: url("../images/icons.png") no-repeat 14px 17px #474a55;
+        background: url("../img/icons.png") no-repeat 14px 17px #474a55;
         background-size: 11%;
     }
     .app-AddressBook input[type="password"] {
-        background: url("../images/icons.png") no-repeat 14px -41px #474a55;
+        background: url("../img/icons.png") no-repeat 14px -41px #474a55;
         background-size: 11%;
     }
     .app-AddressBook h2 {
